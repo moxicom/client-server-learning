@@ -37,6 +37,7 @@ tasks.withType<Jar> {
     manifest {
         attributes["Main-Class"] = "com.example.ApplicationKt"
     }
+    // lollo
     configurations["compileClasspath"].forEach { file: File ->
         from(zipTree(file.absoluteFile))
     }
